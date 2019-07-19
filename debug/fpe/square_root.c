@@ -1,12 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+//#include <math.h>
 #ifdef TRAPFPE
 #include "fpe_x87_sse.h"
 #endif
 
 int main(int argc, char *argv[])
 {
-  float a, b, c, tmp;
+  float a, b, c, tmp, sqrt;
 
 #ifdef TRAPFPE
   set_fpe_x87_sse();
